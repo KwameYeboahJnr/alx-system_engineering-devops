@@ -1,2 +1,2 @@
 #!/bin/bash
-find $current_dir -type d -print | wc -l
+find $current_dir -type d -not -path "$current_dir" -not -path "$current_dir/.." -not -path "$current_dir/*/." -print | wc -l
