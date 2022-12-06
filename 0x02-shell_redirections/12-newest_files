@@ -1,3 +1,2 @@
 #!/bin/bash
-newest_files=$(find $current_dir -type f -print | sort -t " " -k 4 -r -n 10)
-echo "$newest_files"
+ls -t . | head
